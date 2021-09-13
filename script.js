@@ -15,7 +15,7 @@ insert.addEventListener('change', (event) => {
   const file = files[0];
   reader.readAsDataURL(file);
 
-  reader.addEventListener('load', () => {
+  reader.addEventListener('load', (event) => {
     image.src = event.target.result;
     image.alt = file.name;
   });
