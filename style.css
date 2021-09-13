@@ -1,31 +1,48 @@
-#meme-image-container {
-  position: relative;
+* {
+  margin: 0;
+}
+
+body{
+  position: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 90vw;
   border: 1px solid black;
-  height: fit-content;
-  width: 1000px;
-  text-align: center;
+  align-items: center;
+  margin:0 auto;
   margin-top: 20px;
 }
 
-#meme-image{
-  display: block;
-  width: 900px;
-  height:fit-content;
+#inputs {
   text-align: center;
-  margin:40px;
+  margin-top: 30px;
 }
 
-#inputs{
-  border: 1px solid black;
-  margin: 20px;
-  height: 20px;
-  padding:20px
+#image{
+  display: flex;
+  justify-content: center;
+  border: 1px solid blue;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80%;
+  height: 50vh;
 }
 
-#meme-text {
+img{
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  height: 100%;
+  margin: 0 20px;
+}
+
+#meme-text{
+  display: flex;
+  justify-content: center;
   position: absolute;
-  top: 80%;
+  top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%); /* https://www.w3schools.com/howto/howto_css_image_text.asp */
-  font-size: 50px;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-align: center;
 }
