@@ -1,12 +1,25 @@
-
-
 #meme-image-container {
   position: relative;
   border: 1px solid black;
-  height: 100%;
-  width: 100%;
+  height: fit-content;
+  width: 1000px;
   text-align: center;
   margin-top: 20px;
+}
+
+#meme-image{
+  display: block;
+  width: 900px;
+  height:fit-content;
+  text-align: center;
+  margin:40px;
+}
+
+#inputs{
+  border: 1px solid black;
+  margin: 20px;
+  height: 20px;
+  padding:20px
 }
 
 #meme-text {
