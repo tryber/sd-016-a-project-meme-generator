@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+  background-color: beige;
+}
+
+#meme-image-container {
+  margin-top: 20px;
+  width: 350px;
+  height: 350px;
+  border: 1px solid black;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+}
+
+#meme-text {
+  position: relative;
+  margin: 0;
+  top: 40%;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  color: white;
+  font-size: 30px;
+}
+
+img {
+  background-color: white;
+  
+}
+
+input {
+  margin-bottom: 10px;
+  text-align: start;
+}
