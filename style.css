@@ -1,0 +1,15 @@
+#container {
+  width: 350px;
+  height: 350px;
+  border: 1px solid black;
+}
+
+#meme-text {
+  position: relative;
+  margin: 0;
+  top: 40%;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
