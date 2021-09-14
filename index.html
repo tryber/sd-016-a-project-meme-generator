@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="style.css" />
     <title>Meme Generator</title>
   </head>
+
   <body>
       <header id="cabecalho">
           <h1>Meme Generator</h1>
       </header>
 
     <section>
-      <label for="text-input">Digite o texto: </label>
-      <input id="text-input" type="text" name="text-input" min = '1' max="60">
+      <label for="text-input">Type something: </label>
+      <input id="text-input" type="text" name="text-input" minlength = '1' maxlength = "60">
     </section>
 
     <section>
-
       <input accept="image/*" type='file' id="meme-insert" />
-
     </section>
       
 
       <section id="meme-image-container" >
-
         <img id="meme-image" src=""/>
-        
         <div id="meme-text"></div>
+      </section>
 
+      <section id="button-container">
+        <button id="fire">Fire</button>
+        <button id="water">Water</button>
+        <button id="earth">Earth</button>
       </section>
 
     <script src="script.js"></script>

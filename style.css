@@ -22,3 +22,37 @@
     text-align: center;
     z-index: 1;
 }
+
+#button-container {
+    margin-top: 10px;
+}
+
+
+#fire {
+    border: 1px dashed red;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+#water {
+    border: 1px double blue;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+#earth {
+    border: 1px groove green;
+    border-style: double;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+#border2{
+	border: 1px solid red;
+}
