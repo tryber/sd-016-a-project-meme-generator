@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto Meme Generator">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projeto Meme Generator" />
+    <link rel="stylesheet" href="style.css" />
     <title>Meme Generator</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+      <header id="cabecalho">
+          <h1>Meme Generator</h1>
+      </header>
+
+    <section>
+      <label for="text-input">Digite o texto: </label>
+      <input id="text-input" type="text" name="text-input" min = '1' max="60">
+    </section>
+
+    <section>
+
+      <input accept="image/*" type='file' id="meme-insert" />
+
+    </section>
+      
+
+      <section id="meme-image-container" >
+
+        <img id="meme-image" src=""/>
+        
+        <div id="meme-text"></div>
+
+      </section>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
