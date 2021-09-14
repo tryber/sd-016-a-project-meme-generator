@@ -37,21 +37,6 @@ img{
   height: 100%;
   width: 100%;
 }
-/*
-#meme-text{
-  display: flex;
-  justify-content: center;
-  z-index: 999999;
-  right: 50;
-  position: absolute;
-  font-size: 30px;
-  text-align: center;
-  top: 40%;
-  word-break: break-all;
-  width: 200px;
-  border: 1px solid black;
-}
-*/
 
 #meme-text{
   position: absolute;
