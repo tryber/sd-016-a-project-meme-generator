@@ -1,7 +1,8 @@
-#container {
+#meme-image-container {
   width: 350px;
   height: 350px;
   border: 1px solid black;
+  background-color: white;
 }
 
 #meme-text {
@@ -12,4 +13,7 @@
   text-align: center;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+}
+img {
+  background-color: white;
 }

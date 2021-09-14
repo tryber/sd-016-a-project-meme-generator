@@ -8,14 +8,12 @@
   <title>Meme generator</title>
 </head>
 <body>
-  <input id="text-input" type="text">
-  <input id="file-input" type="file" onchange="preview()">
-  <section id="container">
-    <h1 id="meme-text"></h1>
-    <div id="meme-image-container">
-      <img id="frame" src="" width="350px" height="350px"/>
-    </div>
-  </section>
+  <input id="text-input" type="text"> <br>
+  <input id="meme-insert" type="file" required>
+  <div id='meme-image-container' width="350" height="350">
+    <div id='meme-text'></div>
+   <img id="meme-image" src='http://via.placeholder.com/350x150' alt="Sua imagem" width="350" height="350">
+</div><br><br>
 
   <script src="script.js"></script>
 </body>
