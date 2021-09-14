@@ -55,8 +55,12 @@ img{
 
 #meme-text{
   position: absolute;
-  top: 30%;
+  top: 70%;
   left: 50%;
-  transform: translate(-50%, -50%);
   border: 1px solid black;
+  transform: translate(-50%, -50%);
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
+  word-break: break-all;
 }
