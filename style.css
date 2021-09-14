@@ -2,16 +2,22 @@
   margin: 0;
 }
 
-body{
+body {
   position: flex;
   justify-content: center;
   height: fit-content;
   width: 90vw;
-  border: 1px solid black;
   align-items: center;
-  margin:0 auto;
+  margin: 0 auto;
   margin-top: 10px;
   padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 50;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
 }
 
 #inputs {
@@ -19,7 +25,7 @@ body{
   margin-top: 10px;
 }
 
-#meme-image-container{
+#meme-image-container {
   background-color: white;
   border: 1px solid black;
   display: flex;
@@ -32,26 +38,25 @@ body{
   height: fit-content;
 }
 
-img{
+img {
   display: flex;
   justify-content: center;
   height: 100%;
   width: 100%;
 }
 
-#meme-text{
+#meme-text {
   position: absolute;
   top: 70%;
   left: 50%;
-  border: 1px solid black;
-  transform: translate(-50%, -50%);
+  transform: translate(-50% , -50%);
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
   word-break: break-all;
 }
 
-#buttons{
+#buttons {
   text-align: center;
   margin: 10px;
 }
@@ -59,18 +64,17 @@ img{
 #fire , #water , #earth {
   font-size: 20px;
   border-radius: 20%;
-  font-weight: bold;
+  font-weight: 500;
 }
 
-#memes{
-  border: 1px solid black;
+#memes {
   width: 95%;
   height: 220px;
   margin: 20px;
   padding: 5px;
 }
 
-#firstMeme , #secondMeme , #thirdMeme , #fourthMeme{
+#firstMeme , #secondMeme , #thirdMeme , #fourthMeme {
   width: 20%;
   height: 100%;
   border: 1px solid black;

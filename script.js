@@ -15,8 +15,8 @@ insert.addEventListener('change', (event) => {
   const file = files[0];
   reader.readAsDataURL(file);
 
-  reader.addEventListener('load', (event) => {
-    image.src = event.target.result;
+  reader.addEventListener('load', (e) => {
+    image.src = e.target.result;
     image.alt = file.name;
   });
 });
@@ -25,33 +25,33 @@ insert.addEventListener('change', (event) => {
 
 const border = document.getElementById('meme-image-container');
 
-//fire button
+// fire button
 const fireButton = document.getElementById('fire');
 
-function fireBorder(){
-    border.style.border = '3px dashed red';
+function fireBorder() {
+  border.style.border = '3px dashed red';
 }
 
 fireButton.addEventListener('click', fireBorder);
 fireButton.style.backgroundColor = 'rgb(255, 0, 0)';
 
-//water button 
+// water button
 
 const waterButton = document.getElementById('water');
 
-function waterBorder(){
-    border.style.border = '5px double blue';
+function waterBorder() {
+  border.style.border = '5px double blue';
 }
 
 waterButton.addEventListener('click', waterBorder);
 waterButton.style.backgroundColor = 'rgb(0, 0, 255)';
 
-//earth
+// earth
 
 const earthButton = document.getElementById('earth');
 
-function earthBorder(){
-    border.style.border = '6px groove green';
+function earthBorder() {
+  border.style.border = '6px groove green';
 }
 
 earthButton.addEventListener('click', earthBorder);
@@ -60,23 +60,23 @@ earthButton.style.backgroundColor = 'rgb(0, 128, 0)';
 const memeOne = document.getElementById('firstMeme');
 
 memeOne.addEventListener('click', () => {
-    image.src = memeOne.firstElementChild.src;
-})
+  image.src = memeOne.firstElementChild.src;
+});
 
 const memeTwo = document.getElementById('secondMeme');
 
 memeTwo.addEventListener('click', () => {
-    image.src = memeTwo.firstElementChild.src;
-})
+  image.src = memeTwo.firstElementChild.src;
+});
 
 const memeTree = document.getElementById('thirdMeme');
 
 memeTree.addEventListener('click', () => {
-    image.src = memeTree.firstElementChild.src;
-})
+  image.src = memeTree.firstElementChild.src;
+});
 
 const memeFour = document.getElementById('fourthMeme');
 
 memeFour.addEventListener('click', () => {
-    image.src = memeFour.firstElementChild.src;
-})
+  image.src = memeFour.firstElementChild.src;
+});
