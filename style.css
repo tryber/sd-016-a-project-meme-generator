@@ -11,8 +11,9 @@
   top: 40%;
   text-transform: uppercase;
   text-align: center;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  text-shadow: 5px 5px 5px black;
+  color: white;
+  font-size: 30px;
 }
 img {
   background-color: white;
