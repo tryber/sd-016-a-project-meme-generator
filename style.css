@@ -18,31 +18,45 @@ body{
   margin-top: 30px;
 }
 
-#image{
+#meme-image-container{
+  background-color: white;
+  border: 1px solid black;
   display: flex;
+  position: relative;
+  text-align: center;
   justify-content: center;
-  border: 1px solid blue;
   margin: 0 auto;
   margin-top: 30px;
-  width: 80%;
-  height: 50vh;
+  width: fit-content;
+  height: fit-content;
 }
 
 img{
   display: flex;
   justify-content: center;
-  border: 1px solid red;
   height: 100%;
-  margin: 0 20px;
+  width: 100%;
 }
-
+/*
 #meme-text{
   display: flex;
   justify-content: center;
+  z-index: 999999;
+  right: 50;
   position: absolute;
-  top: 55%;
+  font-size: 30px;
+  text-align: center;
+  top: 40%;
+  word-break: break-all;
+  width: 200px;
+  border: 1px solid black;
+}
+*/
+
+#meme-text{
+  position: absolute;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 40px;
-  text-align: center;
+  border: 1px solid black;
 }
