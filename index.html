@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meme Generator</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+</head>
+
+<body>
+
+    <h1>Meme Generator</h1>
+
+    <div id='inputs'>
+        <input id="text-input" placeholder="Digite seu texto aqui" maxlength="60">
+        <input type="file" id="meme-insert" accept="image/*">
+    </div>
+
+    <div id="meme-image-container">
+
+        <img src="/imgs/memePage.png" id="meme-image">
+        <p id="meme-text"></p>
+
+    </div>
+
+    <div id="buttons">
+        <button id="fire">Fire</button>
+        <button id="water">Water</button>
+        <button id="earth">Earth</button>
+    </div>
+
+    <div id="memes">
+        <div id="firstMeme">
+            <img src="/imgs/meme1.png" alt="" id="meme-1">
+        </div>
+        <div id="secondMeme">
+            <img src="/imgs/meme2.png" id="meme-2">
+        </div>
+        <div id="thirdMeme">
+            <img src="/imgs/meme3.png" id="meme-3">
+        </div>
+        <div id="fourthMeme">
+            <img src="/imgs/meme4.png" alt="" id="meme-4">
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+
+</html>
