@@ -8,8 +8,17 @@
   <title>Meme generator</title>
 </head>
 <body>
-  <input id="text-input" type="text"> <br>
-  <input id="meme-insert" type="file" required>
+  <header>
+    <h1>MEME GENERATOR</h1>
+  </header>
+  <label for="">TEXTO: 
+    <input id="text-input" type="text" maxlength="60"> <br>
+  </label>
+
+  <label for="">FOTO:
+    <input id="meme-insert" type="file" required>
+  </label>  
+  
   <div id='meme-image-container' width="350" height="350">
     <h1 id='meme-text'></h1>
    <img id="meme-image" src='http://via.placeholder.com/350x150' alt="Sua imagem" width="350" height="350">
