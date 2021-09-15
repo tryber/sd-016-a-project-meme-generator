@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            MEME GENERATOR
+        </h1>
+        <input type="text" id="text-input" placeholder="digite a frase do meme" maxlength="60">
+        <button id="text-button" onclick = Texto()>
+            <p>
+                inserir Texto
+            </p>
+        </button>
+        <!-- Codigo retirado do site = https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_input_accept -->
+        <form action="/action_page.php">
+          <input type="file" id="meme-insert" name="img" accept="image/*">
+        </form>
+    </header>
+    <div id = 'meme-image-container'>
+        <img id = 'meme-image' src = '' width = '400px'>
+        <p id = 'meme-text'>
+            
+        </p>
+    </div>
+    <section>
+        <h1>
+            SELECIONE A BORDA
+        </h1>
+        <button class = 'borda' id = 'fire' onclick = ChangeBordaFire()></button>
+        <button class = 'borda' id = 'water' onclick = ChangeBordaWater()></button>
+        <button class = 'borda' id = 'earth' onclick = ChangeBordaEarth()></button>
+    </section>
+    <section id = 'imgs'>
+            <img class = 'images' id = 'meme-1' src = 'imgs/meme1.png' width = '60px' height = '60px'> 
+            <img class = 'images' id = 'meme-2' src = 'imgs/meme2.png' width = '60px'> 
+            <img class = 'images' id = 'meme-3' src = 'imgs/meme3.png' width = '60px'> 
+            <img class = 'images' id = 'meme-4' src = 'imgs/meme4.png' width = '60px'> 
+    </section>
+    <button id="none"></button>
+    
+    <script src = 'script.js'> </script>
+</body>
+</html>
