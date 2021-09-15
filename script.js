@@ -8,6 +8,11 @@ const fireButton = document.getElementById('fire');
 const waterButton = document.getElementById('water');
 const earthButton = document.getElementById('earth');
 
+const preSelMeme1 = document.getElementById('meme-1');
+const preSelMeme2 = document.getElementById('meme-2');
+const preSelMeme3 = document.getElementById('meme-3');
+const preSelMeme4 = document.getElementById('meme-4');
+
 function setMemeText() {
   if (inputText.value.length > 60) {
     const fullText = inputText.value;
@@ -29,9 +34,19 @@ function changeFrameColor(e) {
   imageContainer.style.border = `${newBorder}`;
 }
 
+function setPreSelectedMeme(e) {
+  const selImage = e.target.src;
+  image.src = selImage;
+}
+
 inputText.addEventListener('keyup', setMemeText);
 imageInsert.addEventListener('change', setImage);
 
 fireButton.addEventListener('click', changeFrameColor);
 waterButton.addEventListener('click', changeFrameColor);
 earthButton.addEventListener('click', changeFrameColor);
+
+preSelMeme1.addEventListener('click', setPreSelectedMeme);
+preSelMeme2.addEventListener('click', setPreSelectedMeme);
+preSelMeme3.addEventListener('click', setPreSelectedMeme);
+preSelMeme4.addEventListener('click', setPreSelectedMeme);
