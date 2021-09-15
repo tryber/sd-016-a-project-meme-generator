@@ -40,12 +40,12 @@ getFireButton.addEventListener('click', setFireOnBorder);
 getWaterButton.addEventListener('click', setWaterOnBorder);
 getEarthButton.addEventListener('click', setEarthOnBorder);
 
-const getSavedImages = document.querySelectorAll('.picture');
-
 function changeImage(evt) {
   const imgURL = evt.target.src;
   getContainerImage.src = imgURL;
 }
+
+const getSavedImages = document.querySelectorAll('.picture');
 
 for (let index = 0; index < getSavedImages.length; index += 1) {
   getSavedImages[index].addEventListener('click', changeImage);
