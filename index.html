@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projeto Meme Generator" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meme Generator</title>
+  </head>
+
+  <body>
+      <header id="cabecalho">
+          <h1>Meme Generator</h1>
+      </header>
+
+    <section>
+      <label for="text-input">Type something: </label>
+      <input id="text-input" type="text" name="text-input" minlength = '1' maxlength = "60">
+    </section>
+
+    <section>
+      <input accept="image/*" type='file' id="meme-insert" />
+    </section>
+      
+
+      <section id="meme-image-container" >
+        <img id="meme-image" src=""/>
+        <div id="meme-text"></div>
+      </section>
+
+      <section id="button-container">
+        <button id="fire">Fire</button>
+        <button id="water">Water</button>
+        <button id="earth">Earth</button>
+      </section>
+
+      <h2>Ready-made Memes</h2>
+      <section id="saved-memes">
+        <div id="meme-1" class="picture"> 
+          <img src="/imgs/meme1.png" alt="legolas">
+        </div>
+
+        <div id="meme-2" class="picture">
+          <img src="/imgs/meme2.png" alt="gimli">
+        </div>
+
+        <div id="meme-3" class="picture">
+          <img src="/imgs/meme3.png" alt="gandalf">
+        </div>
+
+        <div id="meme-4" class="picture">
+          <img src="imgs/meme4.png" alt="aragorn">
+        </div>
+      </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
