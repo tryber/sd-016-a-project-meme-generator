@@ -1,5 +1,3 @@
-
-
 const getInputValue = document.getElementById('text-input');
 const getParagraph = document.getElementById('meme-text');
 const getFireButton = document.getElementById('fire');
@@ -8,46 +6,53 @@ const getEarthButton = document.getElementById('earth');
 const getContainer = document.getElementById('meme-image-container');
 const getContainerImage = document.getElementById('meme-image');
 
+function addMemeText() {
+  const str = getInputValue.value;
+  console.log(str);
+  getParagraph.innerText = str;
+}
 
-getInputValue.addEventListener('input', function () {
-    const str = getInputValue.value;
-    console.log(str);
-    getParagraph.innerText = str;
-    
-})
+getInputValue.addEventListener('input', addMemeText);
 
 const uploadImg = document.getElementById('meme-insert');
 const myImg = document.getElementById('meme-image');
-uploadImg.onchange = evt => {
-    const [file] = uploadImg.files
-    if (file) {
-      myImg.src = URL.createObjectURL(file)
-    }
-    
+
+uploadImg.onchange = () => {
+  const [file] = uploadImg.files;
+  if (file) {
+    myImg.src = URL.createObjectURL(file);
   }
+};
 
-  getFireButton.addEventListener('click', function () {
-    document.getElementById('meme-image-container').style.border = '3px dashed red';
-  });
+function setFireOnBorder() {
+  getContainer.style.border = '3px dashed red';
+}
 
-  getWaterButton.addEventListener('click', function () {
-    document.getElementById('meme-image-container').style.border = '5px double blue';
-  });
+function setWaterOnBorder() {
+  getContainer.style.border = '5px double blue';
+}
 
-  getEarthButton.addEventListener('click', function () {
-    document.getElementById('meme-image-container').style.border = '6px groove green';
-  });
+function setEarthOnBorder() {
+  getContainer.style.border = '6px groove green';
+}
 
- 
-  const getSavedImages = document.querySelectorAll('.picture');
-  function changeImage () {    
-      for (let index = 0; index < getSavedImages.length; index +=1) {
-      getSavedImages[index].addEventListener('click', function (evt) {
-      const imgURL = evt.target.src;
-      console.log(imgURL);
-      getContainerImage.src = imgURL;
-      })
-    }
-  }
-  changeImage();
-  
+getFireButton.addEventListener('click', setFireOnBorder);
+getWaterButton.addEventListener('click', setWaterOnBorder);
+getEarthButton.addEventListener('click', setEarthOnBorder);
+
+const getSavedImages = document.querySelectorAll('.picture');
+
+function changeImage(evt) {
+  const imgURL = evt.target.src;
+  getContainerImage.src = imgURL;
+}
+
+for (let index = 0; index < getSavedImages.length; index += 1) {
+  getSavedImages[index].addEventListener('click', changeImage);
+}
+
+addMemeText();
+changeImage();
+setFireOnBorder();
+setWaterOnBorder();
+setEarthOnBorder();
