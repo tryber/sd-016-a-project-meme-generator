@@ -40,6 +40,7 @@ getFireButton.addEventListener('click', setFireOnBorder);
 getWaterButton.addEventListener('click', setWaterOnBorder);
 getEarthButton.addEventListener('click', setEarthOnBorder);
 
+
 function changeImage(evt) {
   const imgURL = evt.target.src;
   getContainerImage.src = imgURL;
