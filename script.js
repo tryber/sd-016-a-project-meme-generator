@@ -1,10 +1,12 @@
 const getInputValue = document.getElementById('text-input');
 const getParagraph = document.getElementById('meme-text');
+const uploadImg = document.getElementById('meme-insert');
 const getFireButton = document.getElementById('fire');
 const getWaterButton = document.getElementById('water');
 const getEarthButton = document.getElementById('earth');
 const getContainer = document.getElementById('meme-image-container');
 const getContainerImage = document.getElementById('meme-image');
+const getSavedImagesContainer = document.querySelector('#saved-memes');
 
 function addMemeText() {
   const str = getInputValue.value;
@@ -14,17 +16,9 @@ function addMemeText() {
 
 getInputValue.addEventListener('input', addMemeText);
 
-const uploadImg = document.getElementById('meme-insert');
-const myImg = document.getElementById('meme-image');
-
-function uploadImage() {
-  const [file] = uploadImg.files;
-  if (file) {
-    myImg.src = URL.createObjectURL(file);
-  }
-}
-
-uploadImg.addEventListener('change', uploadImage);
+uploadImg.addEventListener('change', () => {
+  getContainerImage.src = URL.createObjectURL(uploadImg.files[0]);
+});
 
 function setFireOnBorder() {
   getContainer.style.border = '3px dashed red';
@@ -42,19 +36,13 @@ getFireButton.addEventListener('click', setFireOnBorder);
 getWaterButton.addEventListener('click', setWaterOnBorder);
 getEarthButton.addEventListener('click', setEarthOnBorder);
 
-function changeImage(evt) {
-  const imgURL = evt.target.src;
-  getContainerImage.src = imgURL;
+function changeImage() {
+  const memes = getSavedImagesContainer.children;
+  for (let i = 0; i < memes.length; i += 1) {
+    memes[i].addEventListener('click', (evt) => {
+      getContainerImage.src = evt.target.src;
+    });
+  }
 }
 
-const getSavedImages = document.querySelectorAll('.picture');
-
-for (let index = 0; index < getSavedImages.length; index += 1) {
-  getSavedImages[index].addEventListener('click', changeImage);
-}
-
-addMemeText();
 changeImage();
-setFireOnBorder();
-setWaterOnBorder();
-setEarthOnBorder();
