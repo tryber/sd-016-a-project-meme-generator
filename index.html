@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Meme Generator</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 id="titile">Meme Generator</h1>
+    </header>
+    <section id="text">
+      <p id="text-text">Text: </p>
+      <input type="text" placeholder="Type something" id="text-input">
+    </section>
+    <section id="select-image">
+      <label for="meme-insert" id="meme-label">Img</label>
+      <input type="file" id="meme-insert" hidden>
+    </section>
+    <section id="meme-image-container">
+      <img id="meme-image">
+      <p id="meme-text"></p>
+    </section>
+    <section id="border-buttons">
+      <button type="button" id="fire" class="border-button">Fire</button>
+      <button type="button" id="water" class="border-button">Water</button>
+      <button type="button" id="earth" class="border-button">Earth</button>
+    </section>
+    <section id="pre-selected-memes">
+      <div class="sel-image">
+        <img src="imgs/meme1.png" alt="Imagem famosa de meme 1" class="pre-image" id="meme-1">
+      </div>
+      <div class="sel-image">
+        <img src="imgs/meme2.png" alt="Imagem famosa de meme 1" class="pre-image" id="meme-2">
+      </div>
+      <div class="sel-image">
+        <img src="imgs/meme3.png" alt="Imagem famosa de meme 1" class="pre-image" id="meme-3">
+      </div>
+      <div class="sel-image">
+        <img src="imgs/meme4.png" alt="Imagem famosa de meme 1" class="pre-image" id="meme-4">
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
