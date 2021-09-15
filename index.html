@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+       <form action="" method="GET">
+            <input type="text" id="text-input" placeholder="Digite seu meme aqui!" maxlength="60">
+            <input type="file" id="meme-insert" name="img" accept="image/*">
+        </form>
+    </header>
+    <main>
+        <section id="meme-image-container">
+            <img id="meme-image" src="" alt="">
+            <p id="meme-text"></p>
+        </section>
+        <button id="fire">Fire</button>
+        <button id="water">Water</button>
+        <button id="earth">Earth</button>
+        <br>
+        <img src="meme1.png" id='meme-1' class='mini' alt="">
+        <img src="meme2.png" id='meme-2' class='mini' alt="">
+        <img src="meme3.png" id='meme-3' class='mini' alt="">
+        <img src="meme4.png" id='meme-4' class='mini' alt="">
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
