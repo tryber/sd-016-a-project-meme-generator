@@ -4,4 +4,75 @@
 
 body {
   font-family: Poppins, sans-serif;
+  width: max-content;
+  margin: 10px auto;
+  text-align: center;
+}
+
+#text-text {
+  display: inline;
+  margin-right: 5px;
+}
+
+#text-input {
+  border: 1px solid rgb(94 , 94 , 94);
+  border-radius: 5px;
+}
+
+#text-input:focus {
+  outline: none;
+  border: 2px solid black;
+  transition-duration: 0.1s;
+}
+
+#meme-text {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+#select-image {
+  margin-top: 10px;
+}
+
+#meme-label {
+  background-color: rgb(131 , 201 , 125);
+  padding: 4px 7px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+#meme-label:hover {
+  cursor: pointer;
+  background-color: rgb(139 , 212 , 132);
+}
+
+#meme-label:active {
+  cursor: pointer;
+  background-color: rgb(112 , 172 , 107);
+}
+
+#meme-image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#meme-image-container {
+  position: relative;
+  border: 1px solid black;
+  width: 480px;
+  height: 480px;
+  margin-top: 20px;
+  left: 50%;
+  margin-left: -240px;
+  background-color: white;
 }

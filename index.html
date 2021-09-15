@@ -11,6 +11,23 @@
   <title>Meme Generator</title>
 </head>
 <body>
+  <main>
+    <header>
+      <h1 id="titile">Meme Generator</h1>
+    </header>
+    <section id="text">
+      <p id="text-text">Texto: </p>
+      <input type="text" placeholder="Insira um texto" id="text-input">
+    </section>
+    <section id="select-image">
+      <label for="meme-insert" id="meme-label">Img</label>
+      <input type="file" id="meme-insert" hidden>
+    </section>
+    <section id="meme-image-container">
+      <img id="meme-image">
+      <p id="meme-text"></p>
+    </section>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
