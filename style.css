@@ -7,6 +7,7 @@ body {
   width: max-content;
   margin: 10px auto;
   text-align: center;
+  background-color: rgb(235 , 235 , 235);
 }
 
 #text-text {
@@ -77,4 +78,74 @@ body {
   left: 50%;
   margin-left: -240px;
   background-color: white;
+}
+
+#border-buttons {
+  margin-top: 20px;
+}
+
+.border-button {
+  margin-right: 15px;
+  padding: 8px 10px;
+  background-color: rgb(235 , 235 , 235);
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+.border-button:last-child {
+  margin-right: 0;
+}
+
+#fire {
+  color: white;
+  background-color: red;
+  border: 3px dashed red;
+}
+
+#fire:hover {
+  color: rgb(235 , 235 , 235);
+  background-color: rgb(200 , 0 , 0);
+  border-color: rgb(200 , 0 , 0);
+}
+
+#fire:active {
+  color: rgb(235 , 235 , 235);
+  background-color: rgb(180 , 0 , 0);
+  border-color: rgb(180 , 0 , 0);
+}
+
+#water {
+  color: white;
+  background-color: blue;
+  border: 5px double blue;
+}
+
+#water:hover {
+  color: rgb(235 , 235 , 235);
+  background-color: rgb(0 , 0 , 200);
+  border-color: rgb(0 , 0 , 200);
+}
+
+#water:active {
+  color: rgb(235 , 235 , 235);
+  background-color: rgb(0 , 0 , 180);
+  border-color: rgb(0 , 0 , 180);
+}
+
+#earth {
+  color: white;
+  background-color: green;
+  border: 6px groove green;
+}
+
+#earth:hover {
+  color: rgb(235 , 235 , 235);
+  background-color: rgb(0 , 200 , 0);
+  border-color: rgb(0 , 200 , 0);
+}
+
+#earth:active {
+  color: rgb(235 , 235 , 235);
+  background-color: rgb(0 , 180 , 0);
+  border-color: rgb(0 , 180 , 0);
 }
