@@ -6,6 +6,7 @@ const getFireButton = document.getElementById('fire');
 const getWaterButton = document.getElementById('water');
 const getEarthButton = document.getElementById('earth');
 const getContainer = document.getElementById('meme-image-container');
+const getContainerImage = document.getElementById('meme-image');
 
 
 getInputValue.addEventListener('input', function () {
@@ -22,9 +23,8 @@ uploadImg.onchange = evt => {
     if (file) {
       myImg.src = URL.createObjectURL(file)
     }
+    
   }
-
-
 
   getFireButton.addEventListener('click', function () {
     document.getElementById('meme-image-container').style.border = '3px dashed red';
@@ -37,3 +37,17 @@ uploadImg.onchange = evt => {
   getEarthButton.addEventListener('click', function () {
     document.getElementById('meme-image-container').style.border = '6px groove green';
   });
+
+ 
+  const getSavedImages = document.querySelectorAll('.picture');
+  function changeImage () {    
+      for (let index = 0; index < getSavedImages.length; index +=1) {
+      getSavedImages[index].addEventListener('click', function (evt) {
+      const imgURL = evt.target.src;
+      console.log(imgURL);
+      getContainerImage.src = imgURL;
+      })
+    }
+  }
+  changeImage();
+  
