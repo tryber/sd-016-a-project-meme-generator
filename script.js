@@ -17,12 +17,14 @@ getInputValue.addEventListener('input', addMemeText);
 const uploadImg = document.getElementById('meme-insert');
 const myImg = document.getElementById('meme-image');
 
-uploadImg.onchange = () => {
+function uploadImage() {
   const [file] = uploadImg.files;
   if (file) {
     myImg.src = URL.createObjectURL(file);
   }
-};
+}
+
+uploadImg.addEventListener('change', uploadImage);
 
 function setFireOnBorder() {
   getContainer.style.border = '3px dashed red';
@@ -39,7 +41,6 @@ function setEarthOnBorder() {
 getFireButton.addEventListener('click', setFireOnBorder);
 getWaterButton.addEventListener('click', setWaterOnBorder);
 getEarthButton.addEventListener('click', setEarthOnBorder);
-
 
 function changeImage(evt) {
   const imgURL = evt.target.src;
