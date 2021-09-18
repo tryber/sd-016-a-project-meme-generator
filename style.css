@@ -4,6 +4,8 @@
   position: relative;
   width: fit-content;
   max-width: 400px;
+  border: 1px solid black;
+  background-color: white;
 }
 
 #meme-image {
