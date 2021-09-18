@@ -1,0 +1,23 @@
+#meme-image-container {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  width: fit-content;
+  max-width: 400px;
+}
+
+#meme-image {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#meme-text {
+  position: absolute;
+  bottom: 5%;
+  max-width: 90%;
+  max-height: 50%;
+  word-wrap: break-word;
+  margin-left: 5%;
+  margin-right: 5%;
+}
