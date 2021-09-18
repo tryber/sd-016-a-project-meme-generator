@@ -32,16 +32,21 @@ body {
   justify-content: center;
 }
 
-.meme-description {
+#meme-image-container {
+  background-color: white;
+  border: 1px solid black;
+}
+
+#meme-text {
   position: absolute;
   top: 520px;
   max-width: 470px;
   max-height: 500px;
-  font-size: 48px;
+  font-size: 30px;
   color: white;
   font-family: Impact, Haettenschweiler, sans-serif;
   font-weight: 600;
-  text-shadow: 2px 1px black;
+  text-shadow: 5px 5px 5px black;
   word-wrap: break-word;
 }
 
