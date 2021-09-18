@@ -9,9 +9,6 @@ img {
 }
 span {
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  font-size: 30px;
-  text-shadow: 2px 2px 4px #000000;
 }
 
 #meme-image-container {
@@ -22,6 +19,7 @@ span {
   margin-top: 30px;
   width: 500px;
   height: 500px;
+
   border: 1px solid black;
   background-color: rgb(255, 255, 255);
 }
@@ -33,6 +31,9 @@ span {
   max-width: 50%;
   position: absolute;
   z-index: 10;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 5px 5px 5px;
+  font-size: 30px;
 }
 
 #meme-image {
