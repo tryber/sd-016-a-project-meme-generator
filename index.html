@@ -20,9 +20,15 @@
   </header>
   <main>
     <div class="container input-container" id='meme-image-container'>      
-        <label class='form-label label-input' for="meme-input">What will be written in your meme?</label>      
-        <input class='form-control input-container' id='text-input' type="text" required maxLength='50'>    
-          <fieldset class='image-container' id='meme-text'></fieldset>    
+      <label class='form-label label-input' for="meme-input">What will be written in your meme?</label>      
+      <input class='form-control input-container' id='text-input' type="text" required maxLength='60'>
+      <div class="input-group mb-3">
+        <input type="file" accept='image/*' class=' form-control meme-insert' id='meme-insert'> 
+      </div>           
+      <section class='image-container'>
+        <img src="#" class='meme-image' id='meme-image'>
+        <p class='meme-description' id='meme-text'></p>        
+      </section>    
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

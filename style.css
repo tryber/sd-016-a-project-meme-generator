@@ -1,4 +1,4 @@
-* {
+body {
   margin: 0;
   padding: 0;
   font-family: Montserrat, sans-serif;
@@ -10,6 +10,7 @@
   margin-top: 20px;
   text-align: center;
 }
+
 .header-container {
   justify-content: center;
 }
@@ -23,16 +24,28 @@
 }
 
 .image-container {
-  border: 2px solid black;
+  border: 1px solid black;
   width: 500px;
   height: 500px;
   margin: 20px auto;
-  font-size: 48px;
-  color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: 600;
-  text-shadow: 2px 1px black;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
 
+.meme-description {
+  position: absolute;
+  top: 520px;
+  max-width: 470px;
+  max-height: 500px;
+  font-size: 48px;
+  color: white;
+  font-family: Impact, Haettenschweiler, sans-serif;
+  font-weight: 600;
+  text-shadow: 2px 1px black;
+  word-wrap: break-word;
+}
+
+.meme-insert {
+  margin: 20px auto 0;
+  width: 230px;
+}
