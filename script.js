@@ -3,6 +3,11 @@ function getTextInput() {
   return inputText.value;
 }
 
+function getContainerImage() {
+  const containerImg = document.querySelector('#meme-image-container');
+  return containerImg;
+}
+
 function setTextInputSreen() {
   const spanText = document.querySelector('span');
 
@@ -27,4 +32,22 @@ document.querySelector('#meme-insert').addEventListener('change', (event) => {
     imgupLoad.src = img;
   });
   reader.readAsDataURL(file);
+});
+
+const btnFire = document.querySelector('#fire');
+btnFire.addEventListener('click', () => {
+  const fireBorder = getContainerImage();
+  fireBorder.style.border = '3px dashed rgb(255,0,0)';
+});
+
+const btnWater = document.querySelector('#water');
+btnWater.addEventListener('click', () => {
+  const waterBorder = getContainerImage();
+  waterBorder.style.border = '5px double rgb(0, 0, 255)';
+});
+
+const btnEarth = document.querySelector('#earth');
+btnEarth.addEventListener('click', () => {
+  const earthBorder = getContainerImage();
+  earthBorder.style.border = '6px groove rgb(0, 128, 0)';
 });
