@@ -1,4 +1,8 @@
 #meme-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
   margin-top: 30px;
   width: 500px;
   height: 500px;
@@ -6,8 +10,8 @@
 }
 
 #meme-text {
-  margin: 50px auto;
+  word-break: break-all;
+  margin: 0 0 10px 10px;
   border: 1px solid black;
   max-width: 50%;
-  height: 50px;
 }
