@@ -22,4 +22,7 @@
   word-wrap: break-word;
   margin-left: 5%;
   margin-right: 5%;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
 }
