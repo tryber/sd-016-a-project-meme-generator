@@ -1,8 +1,20 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 #meme-image-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
+  position: relative;
   margin-top: 30px;
   width: 500px;
   height: 500px;
@@ -11,7 +23,29 @@
 
 #meme-text {
   word-break: break-all;
-  margin: 0 0 10px 10px;
+  margin: 0 0 15px 15px;
   border: 1px solid black;
   max-width: 50%;
+  position: absolute;
+  z-index: 10;
+}
+
+#meme-image {
+  width: 495px;
+  height: 495px;
+  margin: 2px;
+  background-color: blueviolet;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container input {
+  width: 230px;
+  padding: 7px;
+  border-radius: 8px;
 }
