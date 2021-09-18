@@ -25,7 +25,7 @@
 
 #meme-text {
   position: absolute;
-  bottom: 5%;
+  bottom: 4%;
   max-width: 90%;
   max-height: 50%;
   word-wrap: break-word;
@@ -52,4 +52,10 @@
   color: white;
   font-size: 25px;
   margin: 10px;
+}
+
+#memes-suggestions {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
 }
