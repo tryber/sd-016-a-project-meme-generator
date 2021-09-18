@@ -1,3 +1,12 @@
+#input-field {
+  display: flex;
+  align-items: center;
+}
+
+#load-photo-field {
+  margin-bottom: 15px;
+}
+
 #meme-image-container {
   display: flex;
   align-items: flex-end;
@@ -25,4 +34,22 @@
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+.elementBttn {
+  color: white;
+  font-size: 25px;
+  margin: 10px;
 }

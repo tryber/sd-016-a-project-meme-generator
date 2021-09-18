@@ -2,6 +2,10 @@ const memeTextField = document.getElementById('meme-text');
 const textInput = document.getElementById('text-input');
 const memeImage = document.getElementById('meme-image');
 const memeInsert = document.getElementById('meme-insert');
+const memeImgContainer = document.getElementById('meme-image-container');
+const fireButton = document.getElementById('fire');
+const waterButton = document.getElementById('water');
+const earthButton = document.getElementById('earth');
 
 //https://developer.mozilla.org/en-US/docs/Web/API/FileReader
 const reader = new FileReader();
@@ -28,3 +32,21 @@ function imageLoad() {
 
 //https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event
 memeInsert.addEventListener('change', imageLoad);
+
+function applyFireBorder() {
+  memeImgContainer.style.border = '3px dashed red';
+}
+fireButton.addEventListener('click', applyFireBorder);
+
+function applyWaterBorder() {
+  memeImgContainer.style.border = '5px double blue';
+}
+waterButton.addEventListener('click', applyWaterBorder);
+
+function applyEarthBorder() {
+  memeImgContainer.style.border = '6px groove green';
+}
+earthButton.addEventListener('click', applyEarthBorder);
+
+
+
