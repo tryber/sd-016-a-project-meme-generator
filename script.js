@@ -14,3 +14,28 @@ imageInput.addEventListener('change', function () {
   const newImage = window.URL.createObjectURL(selectedImage);
   memeImage.src = newImage;
 });
+
+const buttonFire = document.querySelector('#fire');
+const buttonWater = document.querySelector('#water');
+const buttonEarth = document.querySelector('#earth');
+
+const imageContainer = document.querySelector('#meme-image-container');
+
+function clearClass(element) {
+  element.removeAttribute('class');
+}
+
+buttonFire.addEventListener('click', function () {
+  clearClass(imageContainer);
+  imageContainer.classList.add('fire');
+});
+
+buttonWater.addEventListener('click', function () {
+  clearClass(imageContainer);
+  imageContainer.classList.add('water');
+});
+
+buttonEarth.addEventListener('click', function () {
+  clearClass(imageContainer);
+  imageContainer.classList.add('earth');
+});
