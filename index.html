@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meme Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Meme Generator</h1>
+    </header>
+    <main class="container">
+      <input type="text" id="text-input" maxlength="60" />
+      <input type="file" id="meme-insert" />
+      <section id="meme-image-container">
+        <div>
+          <img id="meme-image" />
+        </div>
+        <div id="meme-text">
+          <span></span>
+        </div>
+      </section>
+      <div class="buttons">
+        <button id="fire">Fire</button>
+        <button id="water">Water</button>
+        <button id="earth">Earth</button>
+      </div>
+      <section class="section-img">
+        <h3>Memes pré prontos</h3>
+        <img id="meme-1" class="meme-img-pre" src="imgs/meme1.png" alt="baby" />
+        <img
+          id="meme-2"
+          class="meme-img-pre"
+          src="imgs/meme2.png"
+          alt="futurama"
+        />
+        <img
+          id="meme-3"
+          class="meme-img-pre"
+          src="imgs/meme3.png"
+          alt="julius"
+        />
+        <img
+          id="meme-4"
+          class="meme-img-pre"
+          src="imgs/meme4.png"
+          alt="sou rica"
+        />
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
