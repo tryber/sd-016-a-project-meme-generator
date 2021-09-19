@@ -23,7 +23,7 @@ e do site https://glitch.com/edit/#!/read-image-file?path=static%2Findex.html%3A
 Usei parte do código para realizar o upload da imagem
 */
 document.querySelector('#meme-insert').addEventListener('change', (event) => {
-  const imgupLoad = document.querySelector('#output');
+  const imgupLoad = document.querySelector('#meme-image');
   imgupLoad.src = '';
   const file = event.target.files[0];
   const reader = new FileReader();
@@ -51,3 +51,17 @@ btnEarth.addEventListener('click', () => {
   const earthBorder = getContainerImage();
   earthBorder.style.border = '6px groove rgb(0, 128, 0)';
 });
+
+function setMemeImagePre() {
+  const imgupLoad = document.querySelector('#meme-image');
+  const imgMemePre = document.querySelectorAll('.meme-img-pre');
+
+  for (let index = 0; index < imgMemePre.length; index += 1) {
+    imgMemePre[index].addEventListener('click', () => {
+      const urlImg = imgMemePre[index].getAttribute('src');
+      imgupLoad.src = urlImg;
+    });
+  }
+}
+
+setMemeImagePre();
