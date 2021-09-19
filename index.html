@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
+
+</head>
+
+<body>
+
+  <header class='container'>  
+
+      <h1 class='display-1'>Welcome to Meme Generator!</h1>
+      <h6 class='display-6'> The right place to create the most iconic memes of the entire universe!</h6>  
+
+  </header>
+
+  <main class='container'>
+
+    <label class='label-input' for="meme-input">What will be written in your meme?</label>   
+    <input id='text-input' type="text" required maxLength='60'>
+    <input type="file" accept='image/*' id='meme-insert'>
+
+    <section id='meme-image-container'>     
+      <img src="" id='meme-image'>
+      <p id='meme-text'></p>
+    </section>
+
+    <button type='button' class='btn' id='fire'>Fire</button>
+    <button type='button' class='btn' id='water'>Water</button>
+    <button type='button' class='btn' id='earth'>Earth</button>
+
+    <div class="memes-container">
+    <img id='meme-1' src="imgs/meme1.png" alt="first meme">
+    <img id='meme-2' src="imgs/meme2.png" alt="second meme">
+    <img id='meme-3' src="imgs/meme3.png" alt="third meme">
+    <img id='meme-4' src="imgs/meme4.png" alt="fourth meme">
+    </div>
+
+    <script src="script.js"></script>
+
+  </main>
+
+</body>
+
+</html>
