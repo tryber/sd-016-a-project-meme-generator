@@ -56,17 +56,29 @@ body {
 
 #fire {
   background-color: red;
-  display: inline-block;
+  width: 100px;
+  height: 30px;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
 }
 
 #water {
   background-color: blue;
-  display: inline-block;
+  width: 100px;
+  height: 30px;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
 }
 
 #earth {
   background-color: green;
-  display: inline-block;
+  width: 100px;
+  height: 30px;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
 }
 
 .memes-container {
