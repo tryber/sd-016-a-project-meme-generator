@@ -47,16 +47,27 @@ input {
 }
 
 #meme-image-container {
+  position: relative;
   background-color: white;
   border: 1px solid black;
   width: 400px;
   height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: flex-end; */
+}
+
+#meme-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 #meme-text {
+  position: absolute;
+  width: 350px;
+  text-align: center;
+  line-height: 1;
   font-size: 30px;
   font-weight: 700;
   color: white;
