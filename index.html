@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Meme Generator</title>
     <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
+      <h1>Meme Generator</h1>
       <!-- INPUTS -->
       <section class="inputs">
         <label for="text-input">Texto:</label>
-        <input type="text" name="text-input" id="text-input" />
+        <input type="text" name="text-input" id="text-input" maxlength="60" />
 
         <label for="meme-insert">Imagem:</label>
         <input type="file" name="meme-insert" id="meme-insert" />

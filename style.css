@@ -1,0 +1,64 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  font-family: 'Courier Prime', monospace;
+  color: #383838;
+  background-color: #f5faff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+main {
+  background-color: aquamarine;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #00000045;
+}
+
+label {
+  font-size: 1.4rem;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  font-family: 'Courier Prime', monospace;
+  color: #383838;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 2em;
+}
+
+#text-input {
+  border-radius: 5px;
+  border: 2px dotted gray;
+  padding: 0.5em;
+}
+
+#meme-image-container {
+  background-color: white;
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#meme-text {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
