@@ -17,13 +17,26 @@
           minlength="0"
           maxlength="60"
         />
-        <input type="file" id="upload-image" />
-        <button id="send-image" type="submit">Enviar</button>
+        <input type="file" id="meme-insert" onchange="previewImage()" />
       </section>
       <section>
         <div id="meme-image-container">
+          <img src="" alt="" id="meme-image" />
           <p id="meme-text"></p>
         </div>
+      </section>
+      <section>
+        <h3>Estilos de bordas</h3>
+        <button>Fire</button>
+        <button>Earth</button>
+        <button>Water</button>
+      </section>
+      <section>
+        <h3>Imagens recomendadas</h3>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
       </section>
     </main>
     <script src="script.js"></script>

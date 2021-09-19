@@ -1,9 +1,26 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 #meme-image-container {
+  display: flex;
   border: 1px solid black;
   background-color: white;
+  width: 400px;
+  height: 400px;
+}
+
+#meme-image {
+  flex-shrink: 0;
+  width: 400px;
+  height: 400px;
+  object-fit: fill;
 }
 
 #meme-text {
+  align-self: flex-end;
+  position: absolute;
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
