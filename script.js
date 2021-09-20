@@ -11,9 +11,9 @@ function previewImage() {
   if (file.length > 0) {
     const fileReader = new FileReader();
 
-    fileReader.onload = function (event) {
+    fileReader.onload = function load(event) {
       document.getElementById('meme-image').setAttribute('src', event.target.result);
-    }
+    };
     fileReader.readAsDataURL(file[0]);
   }
 }
