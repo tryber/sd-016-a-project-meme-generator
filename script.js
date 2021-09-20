@@ -1,5 +1,5 @@
 // const selectInputText = document.querySelector('#text-input');
-const selectMemeImage = document.querySelector('#meme-insert');
+const selectMemeInsert = document.querySelector('#meme-insert');
 const selectImage = document.querySelector('#meme-image');
 const selectInputText = document.querySelector('#text-input');
 const changeTextInput = document.querySelector('#meme-text p');
@@ -15,18 +15,18 @@ const selectContainerImage = document.querySelector('#meme-image-container');
 function readImage() {
   if (this.files && this.files[0]) {
     const file = new FileReader();
-    file.onload = (event) => {
+    file.addEventListener('load', (event) => {
       selectImage.src = event.target.result;
-    };
+    });
     file.readAsDataURL(this.files[0]);
   }
 }
 
+selectMemeInsert.addEventListener('change', readImage, false);
+
 selectInputText.addEventListener('input', () => {
   changeTextInput.innerHTML = selectInputText.value;
 });
-
-selectMemeImage.addEventListener('change', readImage, false);
 
 const buttonFire = document.querySelector('#fire');
 buttonFire.addEventListener('click', () => {
@@ -43,7 +43,7 @@ buttonEarth.addEventListener('click', () => {
   selectContainerImage.style.border = '6px groove rgb(0, 128, 0)';
 });
 
-function setMemeImagePre() {
+function definePreMeme() {
   const imgPreMeme = document.querySelectorAll('.img-memes');
 
   for (let index = 0; index < imgPreMeme.length; index += 1) {
@@ -54,4 +54,4 @@ function setMemeImagePre() {
   }
 }
 
-setMemeImagePre();
+definePreMeme();

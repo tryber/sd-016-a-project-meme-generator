@@ -17,17 +17,19 @@
     <section class="container">
       <div id="input-text">
         <label for="text-input">Texto:</label>
-        <input id="text-input" type="text">
+        <input id="text-input" type="text" maxlength="60">
       </div>
       <div id="input-image">
         <label for="">Foto</label>
-        <input type="file" name="image" id="meme-insert" maxlength="60">
+        <input type="file" id="meme-insert">
       </div>
       <div id="meme-image-container">
-        <div id="image">
-          <img id="meme-image" src="" alt=" ">
+        <div>
+          <img id="meme-image">
         </div>
-        <div id="meme-text"><p></p></div>
+        <div id="meme-text">
+          <p></p>
+        </div>
       </div>
     </section>
     <div id="buttons">
@@ -36,7 +38,7 @@
       <button id="earth" class="buttons">Terra</button>
     </div>
     <section id="pre-memes">
-      <h3>Memes pré prontos</h3>
+      <h2>Memes pré definidos</h2>
       <img id="meme-1" class="img-memes" src="imgs/meme1.jpeg" alt="meme-1">
       <img id="meme-2" class="img-memes" src="imgs/meme2.jpeg" alt="meme-2">
       <img id="meme-3" class="img-memes" src="imgs/meme3.jpeg" alt="meme-3">
