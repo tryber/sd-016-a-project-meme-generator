@@ -44,6 +44,7 @@ label {
 
 input {
   margin-bottom: 2em;
+  font-family: 'Courier Prime', monospace;
 }
 
 #text-input {
@@ -85,6 +86,7 @@ button {
   border: 1px solid black;
   width: 400px;
   height: 400px;
+  margin-bottom: 1em;
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: flex-end; */
@@ -110,11 +112,26 @@ button {
 
 #meme-text {
   position: absolute;
-  width: 350px;
+  bottom: 0;
+  width: 100%;
   text-align: center;
   line-height: 1;
   font-size: 30px;
   font-weight: 700;
+  padding: 0 1em 0 1em;
+  margin-bottom: 0.5em;
   color: white;
   text-shadow: 5px 5px 5px black;
+}
+
+.select-img {
+  display: flex;
+  width: 400px;
+  height: 90px;
+  justify-content: space-between;
+}
+
+.select-img > img {
+  width: 90px;
+  height: auto;
 }
