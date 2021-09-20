@@ -31,19 +31,15 @@ h1 {
 }
 
 #meme-image-container {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  box-sizing: border-box;
   position: relative;
   border: 1px solid black;
-  height: 400px;
-  width: 400px;
   background-color: white;
+  width: 400px;
+  height: 300px;
 }
 
 #meme-image {
+  position: absolute;
   width: 99%;
   height: 99%;
   margin: 2px;
@@ -51,10 +47,10 @@ h1 {
 }
 
 #meme-text {
-  margin-left: 10px;
-  left: 0;
   position: absolute;
-  top: 70%;
+  word-break: break-all;
+  top: 60%;
+  margin-left: 10px;
   color: white;
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
