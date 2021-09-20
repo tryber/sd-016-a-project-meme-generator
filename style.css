@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  font-family: 'Courier Prime', monospace;
+  color: #383838;
+  background-color: #f5faff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+main {
+  background-color: aquamarine;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #00000045;
+}
+
+label {
+  font-size: 1.4rem;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  font-family: 'Courier Prime', monospace;
+  color: #383838;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 2em;
+  font-family: 'Courier Prime', monospace;
+}
+
+#text-input {
+  border-radius: 5px;
+  border: 2px dotted gray;
+  padding: 0.5em;
+}
+
+.buttons-container {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-evenly;
+}
+
+button {
+  padding: 0.5em 1.5em;
+  font-family: 'Courier Prime', monospace;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+#meme-image-container {
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 1em;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: flex-end; */
+}
+
+.fire {
+  border: 3px dashed red !important;
+}
+
+.water {
+  border: 5px double blue !important;
+}
+
+.earth {
+  border: 6px groove green !important;
+}
+
+#meme-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#meme-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0 1em 0 1em;
+  margin-bottom: 0.5em;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
+
+.select-img {
+  display: flex;
+  width: 400px;
+  height: 90px;
+  justify-content: space-between;
+}
+
+.select-img > img {
+  width: 90px;
+  height: auto;
+}
