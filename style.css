@@ -64,11 +64,8 @@ h1 {
 }
 
 #pre-memes {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  display: inline-block;
   text-align: left;
-  width: 60%;
 }
 
 #pre-memes h2 {

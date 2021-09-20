@@ -1,4 +1,3 @@
-// const selectInputText = document.querySelector('#text-input');
 const selectMemeInsert = document.querySelector('#meme-insert');
 const selectImage = document.querySelector('#meme-image');
 const selectInputText = document.querySelector('#text-input');
@@ -48,8 +47,8 @@ function definePreMeme() {
 
   for (let index = 0; index < imgPreMeme.length; index += 1) {
     imgPreMeme[index].addEventListener('click', () => {
-      const urlImg = imgPreMeme[index].getAttribute('src');
-      selectImage.src = urlImg;
+      const imageSrc = imgPreMeme[index].getAttribute('src');
+      selectImage.src = imageSrc;
     });
   }
 }
