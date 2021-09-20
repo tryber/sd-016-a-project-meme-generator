@@ -33,7 +33,8 @@ h1 {
 #meme-image-container {
   margin-top: 20px;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: stretch;
   box-sizing: border-box;
   position: relative;
   border: 1px solid black;

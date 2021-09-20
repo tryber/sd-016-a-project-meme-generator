@@ -11,20 +11,23 @@ const selectContainerImage = document.querySelector('#meme-image-container');
  * Esta função tem como principal objetivo ler o arquivo enviado e mudar o atributo de image para o src da imagem
  * Fazendo com que a imagem seja exibida na div abaixo do input.
  * E assim conseguimos mostrar a imagem carregada em input file */
-function readImage() {
-  if (this.files && this.files[0]) {
-    const file = new FileReader();
-    file.addEventListener('load', (event) => {
-      selectImage.src = event.target.result;
-    });
-    file.readAsDataURL(this.files[0]);
-  }
+
+// function readImage() {
+//   const file = new FileReader();
+//   file.addEventListener('load', (event) => {
+//     selectImage.src = event.target.result;
+//   });
+//   file.readAsDataURL(this.files[0]);
+// }
+function createImage(event) {
+  const imagem = document.getElementById('meme-image');
+  imagem.src = URL.createObjectURL(event.target.files[0]);
 }
 
-selectMemeInsert.addEventListener('change', readImage, false);
+selectMemeInsert.addEventListener('change', createImage);
 
 selectInputText.addEventListener('input', () => {
-  changeTextInput.innerHTML = selectInputText.value;
+  changeTextInput.innerText = selectInputText.value;
 });
 
 const buttonFire = document.querySelector('#fire');
