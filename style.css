@@ -8,15 +8,15 @@ body {
 }
 
 h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, Times, serif;
   font-size: 40pt;
 }
 
 #container-main {
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
-#input-text, #input-image {
+#input-text , #input-image {
   font-size: x-large;
   padding-bottom: 10px;
   border-radius: 8px;
@@ -72,7 +72,7 @@ h1 {
 }
 
 #pre-memes h2 {
-  margin: 10px 0px;
+  margin: 10px 0;
   width: 100%;
 }
 

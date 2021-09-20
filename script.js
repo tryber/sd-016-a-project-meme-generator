@@ -6,7 +6,7 @@ const changeTextInput = document.querySelector('#meme-text p');
 const selectContainerImage = document.querySelector('#meme-image-container');
 
 // Função que carrega a imagem e exibe no scr extraida do site...
-/** https://www.horadecodar.com.br/2020/05/20/javascript-preview-de-imagem-carregada-em-input-file/ 
+/** https://www.horadecodar.com.br/2020/05/20/javascript-preview-de-imagem-carregada-em-input-file/
  * O que acontece aqui é: temos um mapeamento de evento change, no input de arquivos.
  * Ao ocorrer uma mudança (enviar imagem), a função readImage é acionada.
  * Esta função tem como principal objetivo ler o arquivo enviado e mudar o atributo de image para o src da imagem
