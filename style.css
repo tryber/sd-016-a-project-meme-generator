@@ -1,0 +1,11 @@
+#fire {
+    border: 3px dashed red;
+}
+
+#water {
+    border: blue 5px double;
+}
+
+#earth {
+    border: groove green 6px;
+}
