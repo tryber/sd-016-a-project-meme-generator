@@ -33,3 +33,52 @@ memeInsert.addEventListener('change', () => {
   }
 })
 
+function createBorderButtons() {
+  let borderButtonsContainer = document.createElement('section');
+  let fireBorderButton = document.createElement('button');
+  let waterBorderButton = document.createElement('button');
+  let earthBorderButton = document.createElement('button');
+
+  fireBorderButton.id = 'fire';
+  fireBorderButton.innerText = 'Fire';
+  fireBorderButton.style.backgroundColor = 'red';
+  fireBorderButton.style.border = '3px dashed red';
+
+  waterBorderButton.id = 'water';
+  waterBorderButton.innerText = 'Water';
+  waterBorderButton.style.backgroundColor = 'blue';
+  waterBorderButton.style.border = '5px double blue';
+
+  earthBorderButton.id = 'earth';
+  earthBorderButton.innerText = 'earth';
+  earthBorderButton.style.backgroundColor = 'green';
+  earthBorderButton.style.border = '6px groove green';
+
+  mainContainer.appendChild(borderButtonsContainer);
+  borderButtonsContainer.appendChild(fireBorderButton);
+  borderButtonsContainer.appendChild(waterBorderButton);
+  borderButtonsContainer.appendChild(earthBorderButton);
+}
+
+createBorderButtons();
+
+let fireBorderButton = document.getElementById('fire');
+let waterBorderButton = document.getElementById('water');
+let earthBorderButton = document.getElementById('earth');
+
+
+function fireBorderStyle() {
+  imageContainer.style.border = fireBorderButton.style.border;
+}
+
+function waterBorderStyle() {
+  imageContainer.style.border = waterBorderButton.style.border;
+}
+
+function earthBorderStyle() {
+  imageContainer.style.border = earthBorderButton.style.border;
+}
+
+fireBorderButton.onclick = fireBorderStyle;
+waterBorderButton.onclick = waterBorderStyle;
+earthBorderButton.onclick = earthBorderStyle;
