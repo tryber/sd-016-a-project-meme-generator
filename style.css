@@ -35,10 +35,12 @@ header {
 }
 
 #meme-text {
-  bottom: 30%;
   position: absolute;
+  bottom: 30%;
   word-wrap: break-word;
-  font-size: 36px;
+  color: white;
+  font-size: 30px;
   font-weight: bold;
   padding: 5px;
+  text-shadow: 5px 5px 5px black;
 }
