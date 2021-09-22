@@ -48,3 +48,8 @@ header {
 #fire, #water, #earth {
   color: white;
 }
+
+.default-memes {
+  width: 100px;
+  margin-right: 10px;
+}
