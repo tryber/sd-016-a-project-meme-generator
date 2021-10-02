@@ -9,7 +9,10 @@ main {
 }
 
 #inputs {
+  display: flex;
+  flex-direction: column;
   border: 3px solid blue;
+  width: 400px;
 }
 
 #meme-image-container {
@@ -19,7 +22,20 @@ main {
   margin-left: 8%;
 }
 
+input {
+  margin-left: 2%;
+}
+
 label , label input {
   margin-top: 5%;
 }
 
+#meme-text {
+  position: absolute;
+  color: white;
+}
+
+#meme-image {
+  width: 500px;
+  height: 500px;
+}
