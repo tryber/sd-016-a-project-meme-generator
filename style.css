@@ -18,8 +18,9 @@ main {
 #meme-image-container {
   width: 500px;
   height: 500px;
-  border: 3px solid red;
+  border: 1px solid black;
   margin-left: 8%;
+  background-color: white;
 }
 
 input {
@@ -32,7 +33,9 @@ label , label input {
 
 #meme-text {
   position: absolute;
-  color: white;
+  color: purple;
+  width: 500px;
+  height: 500px;
 }
 
 #meme-image {
