@@ -44,3 +44,21 @@ label , label input {
   width: 500px;
   height: 500px;
 }
+
+button {
+  width: 100px;
+  height: 50px;
+  margin: 20px 0 20px 8%;
+}
+
+#fire {
+  background-color: red;
+}
+
+#earth {
+  background-color: green;
+}
+
+#water {
+  background-color: blue;
+}
