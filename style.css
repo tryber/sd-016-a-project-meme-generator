@@ -33,9 +33,11 @@ label , label input {
 
 #meme-text {
   position: absolute;
-  color: purple;
+  color: white;
   width: 500px;
   height: 500px;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
 }
 
 #meme-image {
