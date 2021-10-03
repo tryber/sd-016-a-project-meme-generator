@@ -46,9 +46,9 @@ label , label input {
 }
 
 button {
-  width: 100px;
+  width: 80px;
   height: 50px;
-  margin: 20px 0 20px 8%;
+  margin: 12px 0 0 2%;
 }
 
 #fire {
@@ -61,4 +61,27 @@ button {
 
 #water {
   background-color: blue;
+}
+
+#thunder {
+  background-color: yellow;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos img {
+  width: 100px;
+  height: 100px;
+  margin: 20px 5px 5px 60px;
+}
+
+.no-selected {
+  border: 1px solid black;
+}
+
+.selected {
+  border: 3px solid red;
 }
