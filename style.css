@@ -9,6 +9,9 @@
 
 #meme-text {
   position: relative;
+  color: white;
+  text-shadow: 5px 5px 5px black; /* sombra preta, de 5 pixels na horizontal, 5 pixels na vertical e um raio de desfoque de 5 pixels*/
+  font-size: 30px;
 }
 
 #meme-image {
