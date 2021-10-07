@@ -26,3 +26,18 @@
   width: 400px;
   height: 400px;
 }
+
+#fire {
+  border: 3px dashed red; /* borda de 3 pixels, dashed e vermelha*/
+  background-color: rgb(255, 0, 0);
+}
+
+#water {
+  border: 5px double blue; /*borda azul, com 5 pixels do tipo double .*/
+  background-color: rgb(0, 0, 255);
+}
+
+#earth {
+  border: 6px groove green; /*borda do tipo groove, verde e com 6 pixels.*/
+  background-color: rgb(0, 128, 0);
+}
