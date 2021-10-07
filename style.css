@@ -3,19 +3,15 @@
   flex-direction: column;
 }
 
-#meme-image-container.child {
-  margin: 0;
-}
-
 #meme-text {
-  position: relative;
+  position: relative; /*https://dzone.com/articles/css-position-relative-vs-position-absolute*/
   color: white;
   text-shadow: 5px 5px 5px black; /* sombra preta, de 5 pixels na horizontal, 5 pixels na vertical e um raio de desfoque de 5 pixels*/
   font-size: 30px;
 }
 
 #meme-image {
-  position: absolute;
+  position: absolute; /*https://www.w3schools.com/css/css_positioning.asp*/
   width: 400px;
   height: 400px;
 }
@@ -40,4 +36,9 @@
 #earth {
   border: 6px groove green; /*borda do tipo groove, verde e com 6 pixels.*/
   background-color: rgb(0, 128, 0);
+}
+
+#sectionImg img {
+  width: 100px;
+  height: 100px;
 }
