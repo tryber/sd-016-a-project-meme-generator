@@ -8,5 +8,7 @@ inputText.addEventListener('input', () => {
 })
 
 imgSelect.addEventListener('change', (event) => {
-    imgUppada.src = URL.createObjectURL(event.target.files[0]);
+    imgUppada.src = URL.createObjectURL(event.target.files[0]); // Flavio code-review + https://developer.mozilla.org/pt-BR/docs/Web/API/URL/createObjectURl
 })
+
+

@@ -13,4 +13,13 @@
 
 #meme-image {
   position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+#meme-image-container {
+  border: 1px solid;
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  height: 400px;
 }
