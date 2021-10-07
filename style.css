@@ -1,0 +1,16 @@
+#inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+#meme-image-container.child {
+  margin: 0;
+}
+
+#meme-text {
+  position: relative;
+}
+
+#meme-image {
+  position: absolute;
+}
